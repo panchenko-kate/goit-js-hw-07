@@ -19,30 +19,3 @@ function createImageCardsMurkup (imgs) {
 };
 
 var gallery = new SimpleLightbox('.gallery a', {captionsData: 'alt', captionDelay: 250,});
-gallery.on('shown.simplelightbox', function () {
-	// do something…
-    
-});
-
-// function onImgContainerClick(evt) {
-//     evt.stopPropagation();
-//     evt.preventDefault();
-
-//     const isImgCardEl = evt.target.classList.contains('gallery__image');
-
-//     if(!isImgCardEl) {
-//         return;
-//     }
-
-//     const imgEl = evt.target;
-//     const originalImgSizeRef = imgEl.dataset.source;
-//     console.log(originalImgSizeRef);
-
-//     const instance = basicLightbox.create(`
-//     <img
-//       src="${originalImgSizeRef}"
-//     />
-//     `)
-//     instance.show();
-// };
-// console.log(galleryItems);
